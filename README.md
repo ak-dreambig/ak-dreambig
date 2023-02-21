@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Aimal Khan</h1>
+<h1 align="center">AOA/Hi!👋, I'm Aimal Khan</h1>
 <h3 align="center">I am currently Studying in Fast-Nuces(National University of Computer & Emergin Sciences).I am majoring in Computer sciences.</h3>
 
 - 🌱 I’m currently learning **web development and devops.**
