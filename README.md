@@ -1,17 +1,68 @@
-<h1 align="center">AOA/Hi!👋, I'm Aimal Khan</h1>
-<h3 align="center">I am currently Studying in Fast-Nuces(National University of Computer & Emergin Sciences).I am majoring in Computer sciences.</h3>
+<div align="center">
 
-- 🌱 I’m currently learning **web development and devops.**
+<a href="https://aimal-portfolio-xi.vercel.app/"><img src="assets/hero.svg" alt="Aimal Khan. Applied AI Engineer, Researcher and Writer." width="100%"></a>
 
-- 📫 How to reach me **aimalkhan9247@gmail.com**
+<br>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/ak_dreambig" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ak_dreambig" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/ak-dreambig/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ak-dreambig/" height="30" width="40" /></a>
-<a href="https://instagram.com/ak_dreambig" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="ak_dreambig" height="30" width="40" /></a>
-</p>
+[**Portfolio**](https://aimal-portfolio-xi.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/ak-dreambig) &nbsp;·&nbsp; [Medium](https://medium.com/@ak_dreambig) &nbsp;·&nbsp; [YouTube](https://youtube.com/@ak-dreambig) &nbsp;·&nbsp; [Hugging Face](https://huggingface.co/ak-dreambig) &nbsp;·&nbsp; [Discord](https://discord.gg/3TXeAN8tB) &nbsp;·&nbsp; [Email](mailto:aimalkhan9247@gmail.com)
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+</div>
 
+<br>
+
+I'm an AI engineer in Islamabad with two-plus years of building production systems across computer vision, document understanding and synthetic data.
+
+Right now I'm at **XFlow Research**, designing modular OCR pipelines around vision-language models, and building face liveness and anti-spoofing for biometric verification. Before that I led the synthetic data team at **Bluescarf.ai**. On the side I write, run a community of builders, and take on research problems that interest me.
+
+> *I build systems that learn, while staying curious about the questions those systems begin to ask us back.*
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## Selected work
+
+| Project | What it does | Built with |
+|---|---|---|
+| [**Patient Registration Voice Agent**](https://github.com/ak-dreambig/patient-registration-voice-agent) | A voice AI agent you can phone. It registers patients, validates their details server-side and saves them to PostgreSQL. Live dashboard and REST API included. | Vapi, GPT-4o-mini, FastAPI, PostgreSQL, Railway |
+| [**QF-Attack Robustness Analysis**](https://github.com/ak-dreambig/qf-attack-robustness-analysis) | Reproduces a CVPR 2023 workshop attack on Stable Diffusion and extends it. Finding: INT8-quantized CLIP is an accidental defense, and attacks crafted for FP32 barely transfer to it. | PyTorch, CLIP, Stable Diffusion |
+| [**Teaching Machines to Dream**](https://github.com/ak-dreambig/teaching-machines-to-dream) | A practical engineer's handbook on synthetic data, with 7 runnable notebooks covering tabular, text, image and document pipelines. | SDV, CTGAN, LLMs, Diffusion |
+| [**SmartLoad**](https://github.com/ak-dreambig/SmartLoad) | Predicts a building's heating and cooling demand from early design parameters, and explains every prediction. | FastAPI, scikit-learn, SHAP, React |
+| [**AlertEye**](https://github.com/ak-dreambig/AlertEye) | Final year project: a Flutter app that detects drowsy driving from the camera feed and phone motion sensors, and alerts the driver in real time. | Flutter, MobileNetV2, ConvLSTM2D, TFLite |
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## Results I can point to
+
+| **95%** | **99%** | **85%** | **50,000+** |
+|:---:|:---:|:---:|:---:|
+| less manual labelling on tabular data, using rule-based synthetic generation | accuracy on LLM-generated QA pairs for low-resource languages, including Sindhi | training efficiency gain from synthetic Twitter and Reddit sentiment data | social posts labelled automatically with BERT and LLMs |
+
+## Toolbox
+
+<img src="assets/stack.svg" width="100%" alt="Languages: Python, TypeScript, JavaScript, Dart, C++, C, Java. Vision and document AI: OpenCV, PaddleOCR, TrOCR, VLMs, Faster R-CNN, liveness detection. LLMs and NLP: GPT-4, BERT, Whisper, Hugging Face. ML and data: PyTorch, TensorFlow, scikit-learn, SHAP, Pandas, synthetic data. Build and ship: FastAPI, React, Next.js, Flutter, PostgreSQL, Docker, AWS, Azure.">
+
+## Writing and research
+
+- **[Teaching Machines to Dream](https://github.com/ak-dreambig/teaching-machines-to-dream)**: an open handbook on synthetic data, written with Hamza Raziq Khan. The notebooks run free on [Kaggle](https://www.kaggle.com/work/collections/18158089).
+- **Characterization of Non-Linear Behaviour of Asphalt Concrete and Predictive Modeling**: an ANN trained on 6,082 experimental data points to predict resilient modulus, reaching R² above 0.90.
+- **[QF-Attack write-up](https://github.com/ak-dreambig/qf-attack-robustness-analysis)**: reproduction, three-way attack comparison and a new quantization experiment.
+
+## DreamBig Kaarwan
+
+A community for people who like to build and learn in the open, rooted in the idea of moving together. Our first run, **AI Bootcamp Cohort 01: Foundation to Multimodal AI**, brought in 30+ participants.
+
+[Join us on Discord](https://discord.gg/3TXeAN8tB)
+
+## Activity
+
+<img src="assets/stats.svg" width="100%" alt="GitHub activity summary: public repositories, contributions, languages by code and recently shipped projects">
+
+<sub>This card is generated by a small script and refreshed daily by [GitHub Actions](.github/workflows/stats.yml). No third-party widgets involved.</sub>
+
+<br>
+
+<div align="center">
+
+**Open to AI and computer vision roles, research collaborations and relocation.**
+The quickest way to reach me is [aimalkhan9247@gmail.com](mailto:aimalkhan9247@gmail.com) or [LinkedIn](https://linkedin.com/in/ak-dreambig).
+
+</div>
