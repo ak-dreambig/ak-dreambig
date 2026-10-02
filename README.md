@@ -1,8 +1,8 @@
 <a href="https://aimal-portfolio-xi.vercel.app/">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-    <img src="assets/hero-dark.svg" alt="Aimal Khan. Applied AI Engineer, Researcher and Writer." width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark-v2.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light-v2.svg">
+    <img src="assets/hero-dark-v2.svg" alt="Aimal Khan. Applied AI Engineer, Researcher and Writer." width="100%">
   </picture>
 </a>
 
