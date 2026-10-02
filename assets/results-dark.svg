@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 170" width="1000" height="170" role="img" aria-label="Results: 95% less manual labelling, 99% QA accuracy for low-resource languages, 85% training efficiency gain, 50,000+ posts labelled automatically">
+<defs><linearGradient id="n" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4de1d0"/><stop offset="1" stop-color="#a99cff"/></linearGradient></defs>
+<text x="125" y="62" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="800" fill="url(#n)" text-anchor="middle" letter-spacing="-1">95%</text>
+<text x="125" y="94" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">less manual labelling on</text>
+<text x="125" y="113" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">tabular data via synthetic</text>
+<text x="125" y="132" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">data generation</text>
+<text x="375" y="62" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="800" fill="url(#n)" text-anchor="middle" letter-spacing="-1">99%</text>
+<text x="375" y="94" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">accuracy on LLM-made QA pairs</text>
+<text x="375" y="113" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">for low-resource languages,</text>
+<text x="375" y="132" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">including Sindhi</text>
+<line x1="250" y1="20" x2="250" y2="150" stroke="#8b949e" stroke-opacity=".22"/>
+<text x="625" y="62" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="800" fill="url(#n)" text-anchor="middle" letter-spacing="-1">85%</text>
+<text x="625" y="94" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">training efficiency gain from</text>
+<text x="625" y="113" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">synthetic Twitter and Reddit</text>
+<text x="625" y="132" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">sentiment datasets</text>
+<line x1="500" y1="20" x2="500" y2="150" stroke="#8b949e" stroke-opacity=".22"/>
+<text x="875" y="62" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="800" fill="url(#n)" text-anchor="middle" letter-spacing="-1">50,000+</text>
+<text x="875" y="94" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">social posts labelled</text>
+<text x="875" y="113" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">automatically with</text>
+<text x="875" y="132" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">BERT and LLMs</text>
+<line x1="750" y1="20" x2="750" y2="150" stroke="#8b949e" stroke-opacity=".22"/>
+</svg>

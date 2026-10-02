@@ -1,4 +1,4 @@
-"""Generate assets/stats.svg from the public GitHub API.
+"""Generate assets/stats-dark.svg and assets/stats-light.svg from the public GitHub API.
 
 Run locally:   GITHUB_TOKEN=$(gh auth token) python .github/scripts/stats.py
 In Actions:    uses the built-in GITHUB_TOKEN (see .github/workflows/stats.yml)
@@ -11,7 +11,7 @@ from xml.sax.saxutils import escape
 
 USER = os.environ.get("GH_USER", "ak-dreambig")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-OUT = os.path.join(os.path.dirname(__file__), "..", "..", "assets", "stats.svg")
+OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "assets")
 
 FONT = "'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
 MONO = "ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace"
@@ -83,52 +83,60 @@ total = sum(langs.values()) or 1
 top = sorted(langs.items(), key=lambda kv: -kv[1])[:6]
 recent = repos[:4]
 
+THEMES = {
+    "dark": {"ink": "#f0f6fc", "muted": "#8b949e", "faint": "#6e7681", "dot": "#ffb86b", "hair": ".25"},
+    "light": {"ink": "#1f2328", "muted": "#59636e", "faint": "#818b98", "dot": "#e8821a", "hair": ".4"},
+}
 W, H = 1000, 270
-o = []
-o.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub activity summary for {escape(USER)}">')
-o.append('<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b1a"/><stop offset="1" stop-color="#150f36"/></linearGradient>'
-         '<clipPath id="bar"><rect x="330" y="86" width="330" height="12" rx="6"/></clipPath></defs>')
-o.append(f'<rect width="{W}" height="{H}" rx="18" fill="url(#bg)"/><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="18" fill="none" stroke="#fff" stroke-opacity=".08"/>')
+today = f"{datetime.now(timezone.utc):%d %b %Y}"
 
-# column 1: numbers
-o.append(f'<text x="32" y="46" font-family="{MONO}" font-size="11" fill="#8f93b8" letter-spacing="2.2">THE NUMBERS</text>')
-numbers = [(len(repos), "public repositories")]
-if contrib is not None:
-    numbers.append((contrib, "contributions, last 12 months"))
-numbers.append((user["followers"], "followers"))
-for i, (num, label) in enumerate(numbers):
-    y = 98 + i * 62
-    o.append(f'<text x="32" y="{y}" font-family="{FONT}" font-size="40" font-weight="800" fill="#e7e8ff">{num}</text>')
-    o.append(f'<text x="32" y="{y + 20}" font-family="{FONT}" font-size="13" fill="#8f93b8">{label}</text>')
 
-# column 2: languages
-o.append(f'<text x="330" y="46" font-family="{MONO}" font-size="11" fill="#8f93b8" letter-spacing="2.2">LANGUAGES BY CODE</text>')
-o.append('<g clip-path="url(#bar)">')
-x = 330.0
-for name, b in top:
-    w = 330 * b / sum(v for _, v in top)
-    o.append(f'<rect x="{x:.1f}" y="86" width="{w + 0.5:.1f}" height="12" fill="{LANG_COLORS.get(name, "#8b7cff")}"/>')
-    x += w
-o.append('</g>')
-for i, (name, b) in enumerate(top):
-    col, row = i % 2, i // 2
-    lx, ly = 330 + col * 170, 134 + row * 34
-    o.append(f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{LANG_COLORS.get(name, "#8b7cff")}"/>')
-    o.append(f'<text x="{lx + 18}" y="{ly}" font-family="{FONT}" font-size="14" fill="#e7e8ff">{escape(name)}</text>')
-    o.append(f'<text x="{lx + 150}" y="{ly}" font-family="{FONT}" font-size="13" fill="#8f93b8" text-anchor="end">{100 * b / total:.0f}%</text>')
-o.append(f'<text x="330" y="246" font-family="{FONT}" font-size="11" fill="#6b6f93">Excludes notebooks. Public, non-fork repos. Updated {datetime.now(timezone.utc):%d %b %Y}.</text>')
+def render(c):
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub activity summary for {escape(USER)}">',
+         '<defs><clipPath id="bar"><rect x="340" y="86" width="320" height="12" rx="6"/></clipPath></defs>']
+    for x in (310, 690):
+        o.append(f'<line x1="{x}" y1="28" x2="{x}" y2="236" stroke="{c["muted"]}" stroke-opacity="{c["hair"]}"/>')
 
-# column 3: recent
-o.append(f'<text x="710" y="46" font-family="{MONO}" font-size="11" fill="#8f93b8" letter-spacing="2.2">RECENTLY SHIPPED</text>')
-for i, r in enumerate(recent):
-    y = 90 + i * 44
-    name = r["name"] if len(r["name"]) <= 24 else r["name"][:23] + "…"
-    o.append(f'<circle cx="716" cy="{y - 5}" r="4" fill="#ffb86b"/>')
-    o.append(f'<text x="730" y="{y}" font-family="{FONT}" font-size="14" font-weight="600" fill="#e7e8ff">{escape(name)}</text>')
-    o.append(f'<text x="730" y="{y + 18}" font-family="{FONT}" font-size="12" fill="#8f93b8">pushed {ago(r["pushed_at"])}</text>')
-o.append('</svg>')
+    o.append(f'<text x="6" y="46" font-family="{MONO}" font-size="11" fill="{c["muted"]}" letter-spacing="2.2">THE NUMBERS</text>')
+    numbers = [(len(repos), "public repositories")]
+    if contrib is not None:
+        numbers.append((contrib, "contributions, last 12 months"))
+    numbers.append((user["followers"], "followers"))
+    for i, (num, label) in enumerate(numbers):
+        y = 98 + i * 62
+        o.append(f'<text x="6" y="{y}" font-family="{FONT}" font-size="40" font-weight="800" fill="{c["ink"]}">{num}</text>')
+        o.append(f'<text x="6" y="{y + 20}" font-family="{FONT}" font-size="13" fill="{c["muted"]}">{label}</text>')
 
-os.makedirs(os.path.dirname(OUT), exist_ok=True)
-with open(OUT, "w", encoding="utf8") as f:
-    f.write("\n".join(o))
-print(f"wrote {os.path.normpath(OUT)}: {len(repos)} repos, contrib={contrib}, langs={[k for k, _ in top]}")
+    o.append(f'<text x="340" y="46" font-family="{MONO}" font-size="11" fill="{c["muted"]}" letter-spacing="2.2">LANGUAGES BY CODE</text>')
+    o.append('<g clip-path="url(#bar)">')
+    x = 340.0
+    tot_top = sum(v for _, v in top)
+    for name, b in top:
+        w = 320 * b / tot_top
+        o.append(f'<rect x="{x:.1f}" y="86" width="{w + 0.5:.1f}" height="12" fill="{LANG_COLORS.get(name, "#8b7cff")}"/>')
+        x += w
+    o.append('</g>')
+    for i, (name, b) in enumerate(top):
+        col, row = i % 2, i // 2
+        lx, ly = 340 + col * 165, 134 + row * 34
+        o.append(f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{LANG_COLORS.get(name, "#8b7cff")}"/>')
+        o.append(f'<text x="{lx + 18}" y="{ly}" font-family="{FONT}" font-size="14" fill="{c["ink"]}">{escape(name)}</text>')
+        o.append(f'<text x="{lx + 145}" y="{ly}" font-family="{FONT}" font-size="13" fill="{c["muted"]}" text-anchor="end">{100 * b / total:.0f}%</text>')
+    o.append(f'<text x="340" y="246" font-family="{FONT}" font-size="11" fill="{c["faint"]}">Excludes notebooks. Public, non-fork repos. Updated {today}.</text>')
+
+    o.append(f'<text x="722" y="46" font-family="{MONO}" font-size="11" fill="{c["muted"]}" letter-spacing="2.2">RECENTLY SHIPPED</text>')
+    for i, r in enumerate(recent):
+        y = 90 + i * 44
+        name = r["name"] if len(r["name"]) <= 24 else r["name"][:23] + "…"
+        o.append(f'<circle cx="728" cy="{y - 5}" r="4" fill="{c["dot"]}"/>')
+        o.append(f'<text x="742" y="{y}" font-family="{FONT}" font-size="14" font-weight="600" fill="{c["ink"]}">{escape(name)}</text>')
+        o.append(f'<text x="742" y="{y + 18}" font-family="{FONT}" font-size="12" fill="{c["muted"]}">pushed {ago(r["pushed_at"])}</text>')
+    o.append('</svg>')
+    return "\n".join(o)
+
+
+os.makedirs(OUT_DIR, exist_ok=True)
+for theme, colors in THEMES.items():
+    with open(os.path.join(OUT_DIR, f"stats-{theme}.svg"), "w", encoding="utf8") as f:
+        f.write(render(colors))
+print(f"wrote stats cards: {len(repos)} repos, contrib={contrib}, langs={[k for k, _ in top]}")

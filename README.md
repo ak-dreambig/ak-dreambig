@@ -1,12 +1,12 @@
-<div align="center">
+<a href="https://aimal-portfolio-xi.vercel.app/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+    <img src="assets/hero-dark.svg" alt="Aimal Khan. Applied AI Engineer, Researcher and Writer." width="100%">
+  </picture>
+</a>
 
-<a href="https://aimal-portfolio-xi.vercel.app/"><img src="assets/hero.svg" alt="Aimal Khan. Applied AI Engineer, Researcher and Writer." width="100%"></a>
-
-<br>
-
-[**Portfolio**](https://aimal-portfolio-xi.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/ak-dreambig) &nbsp;·&nbsp; [Medium](https://medium.com/@ak_dreambig) &nbsp;·&nbsp; [YouTube](https://youtube.com/@ak-dreambig) &nbsp;·&nbsp; [Hugging Face](https://huggingface.co/ak-dreambig) &nbsp;·&nbsp; [Discord](https://discord.gg/3TXeAN8tB) &nbsp;·&nbsp; [Email](mailto:aimalkhan9247@gmail.com)
-
-</div>
+**[Portfolio](https://aimal-portfolio-xi.vercel.app/)** &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/ak-dreambig) &nbsp;·&nbsp; [Medium](https://medium.com/@ak_dreambig) &nbsp;·&nbsp; [YouTube](https://youtube.com/@ak-dreambig) &nbsp;·&nbsp; [Hugging Face](https://huggingface.co/ak-dreambig) &nbsp;·&nbsp; [Discord](https://discord.gg/3TXeAN8tB) &nbsp;·&nbsp; [Email](mailto:aimalkhan9247@gmail.com)
 
 <br>
 
@@ -28,22 +28,26 @@ Right now I'm at **XFlow Research**, designing modular OCR pipelines around visi
 | [**SmartLoad**](https://github.com/ak-dreambig/SmartLoad) | Predicts a building's heating and cooling demand from early design parameters, and explains every prediction. | FastAPI, scikit-learn, SHAP, React |
 | [**AlertEye**](https://github.com/ak-dreambig/AlertEye) | Final year project: a Flutter app that detects drowsy driving from the camera feed and phone motion sensors, and alerts the driver in real time. | Flutter, MobileNetV2, ConvLSTM2D, TFLite |
 
-<img src="assets/divider.svg" width="100%" alt="">
+## Results
 
-## Results I can point to
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/results-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/results-light.svg">
+  <img src="assets/results-dark.svg" alt="95% less manual labelling on tabular data. 99% accuracy on QA pairs for low-resource languages, including Sindhi. 85% training efficiency gain from synthetic sentiment datasets. 50,000+ social posts labelled automatically." width="100%">
+</picture>
 
-| **95%** | **99%** | **85%** | **50,000+** |
-|:---:|:---:|:---:|:---:|
-| less manual labelling on tabular data, using rule-based synthetic generation | accuracy on LLM-generated QA pairs for low-resource languages, including Sindhi | training efficiency gain from synthetic Twitter and Reddit sentiment data | social posts labelled automatically with BERT and LLMs |
+## What I work with
 
-## Toolbox
-
-<img src="assets/stack.svg" width="100%" alt="Languages: Python, TypeScript, JavaScript, Dart, C++, C, Java. Vision and document AI: OpenCV, PaddleOCR, TrOCR, VLMs, Faster R-CNN, liveness detection. LLMs and NLP: GPT-4, BERT, Whisper, Hugging Face. ML and data: PyTorch, TensorFlow, scikit-learn, SHAP, Pandas, synthetic data. Build and ship: FastAPI, React, Next.js, Flutter, PostgreSQL, Docker, AWS, Azure.">
+- **Languages:** Python, TypeScript, JavaScript, Dart, C++, C, Java
+- **Vision and document AI:** OpenCV, PaddleOCR, TrOCR, vision-language models, Faster R-CNN, liveness and anti-spoofing
+- **LLMs and NLP:** GPT-4, BERT, Whisper, Hugging Face, prompt engineering, fine-tuning
+- **ML and data:** PyTorch, TensorFlow, scikit-learn, SHAP, Pandas, CTGAN, SMOTE, synthetic data pipelines
+- **Shipping it:** FastAPI, React, Next.js, Flutter, PostgreSQL, Docker, AWS, Azure
 
 ## Writing and research
 
 - **[Teaching Machines to Dream](https://github.com/ak-dreambig/teaching-machines-to-dream)**: an open handbook on synthetic data, written with Hamza Raziq Khan. The notebooks run free on [Kaggle](https://www.kaggle.com/work/collections/18158089).
-- **Characterization of Non-Linear Behaviour of Asphalt Concrete and Predictive Modeling**: an ANN trained on 6,082 experimental data points to predict resilient modulus, reaching R² above 0.90.
+- **[Characterization of Non-Linear Behaviour of Asphalt Concrete and Predictive Modeling](https://doi.org/10.5281/zenodo.17473396)**: an ANN trained on 6,082 experimental data points to predict resilient modulus, reaching R² above 0.90.
 - **[QF-Attack write-up](https://github.com/ak-dreambig/qf-attack-robustness-analysis)**: reproduction, three-way attack comparison and a new quantization experiment.
 
 ## DreamBig Kaarwan
@@ -52,17 +56,18 @@ A community for people who like to build and learn in the open, rooted in the id
 
 [Join us on Discord](https://discord.gg/3TXeAN8tB)
 
+<img src="assets/divider.svg" width="100%" alt="">
+
 ## Activity
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity summary: public repositories, contributions, languages by code and recently shipped projects">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg">
+  <img src="assets/stats-dark.svg" alt="GitHub activity summary: public repositories, contributions, languages by code and recently shipped projects" width="100%">
+</picture>
 
 <sub>This card is generated by a small script and refreshed daily by [GitHub Actions](.github/workflows/stats.yml). No third-party widgets involved.</sub>
 
 <br>
 
-<div align="center">
-
-**Open to AI and computer vision roles, research collaborations and relocation.**
-The quickest way to reach me is [aimalkhan9247@gmail.com](mailto:aimalkhan9247@gmail.com) or [LinkedIn](https://linkedin.com/in/ak-dreambig).
-
-</div>
+**Open to AI and computer vision roles, research collaborations and relocation.** The quickest way to reach me is [aimalkhan9247@gmail.com](mailto:aimalkhan9247@gmail.com) or [LinkedIn](https://linkedin.com/in/ak-dreambig).

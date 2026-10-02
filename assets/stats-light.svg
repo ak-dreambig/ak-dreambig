@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270" width="1000" height="270" role="img" aria-label="GitHub activity summary for ak-dreambig">
+<defs><clipPath id="bar"><rect x="340" y="86" width="320" height="12" rx="6"/></clipPath></defs>
+<line x1="310" y1="28" x2="310" y2="236" stroke="#59636e" stroke-opacity=".4"/>
+<line x1="690" y1="28" x2="690" y2="236" stroke="#59636e" stroke-opacity=".4"/>
+<text x="6" y="46" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" fill="#59636e" letter-spacing="2.2">THE NUMBERS</text>
+<text x="6" y="98" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" fill="#1f2328">13</text>
+<text x="6" y="118" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e">public repositories</text>
+<text x="6" y="160" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" fill="#1f2328">60</text>
+<text x="6" y="180" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e">contributions, last 12 months</text>
+<text x="6" y="222" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" fill="#1f2328">5</text>
+<text x="6" y="242" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e">followers</text>
+<text x="340" y="46" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" fill="#59636e" letter-spacing="2.2">LANGUAGES BY CODE</text>
+<g clip-path="url(#bar)">
+<rect x="340.0" y="86" width="115.9" height="12" fill="#00B4AB"/>
+<rect x="455.4" y="86" width="78.8" height="12" fill="#3572A5"/>
+<rect x="533.8" y="86" width="50.6" height="12" fill="#f34b7d"/>
+<rect x="583.9" y="86" width="44.2" height="12" fill="#f1e05a"/>
+<rect x="627.5" y="86" width="21.1" height="12" fill="#9b7653"/>
+<rect x="648.2" y="86" width="12.3" height="12" fill="#8a8a8a"/>
+</g>
+<circle cx="345" cy="130" r="5" fill="#00B4AB"/>
+<text x="358" y="134" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1f2328">Dart</text>
+<text x="485" y="134" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e" text-anchor="end">35%</text>
+<circle cx="510" cy="130" r="5" fill="#3572A5"/>
+<text x="523" y="134" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1f2328">Python</text>
+<text x="650" y="134" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e" text-anchor="end">24%</text>
+<circle cx="345" cy="164" r="5" fill="#f34b7d"/>
+<text x="358" y="168" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1f2328">C++</text>
+<text x="485" y="168" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e" text-anchor="end">15%</text>
+<circle cx="510" cy="164" r="5" fill="#f1e05a"/>
+<text x="523" y="168" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1f2328">JavaScript</text>
+<text x="650" y="168" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e" text-anchor="end">13%</text>
+<circle cx="345" cy="198" r="5" fill="#9b7653"/>
+<text x="358" y="202" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1f2328">Assembly</text>
+<text x="485" y="202" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e" text-anchor="end">6%</text>
+<circle cx="510" cy="198" r="5" fill="#8a8a8a"/>
+<text x="523" y="202" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1f2328">C</text>
+<text x="650" y="202" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e" text-anchor="end">4%</text>
+<text x="340" y="246" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#818b98">Excludes notebooks. Public, non-fork repos. Updated 02 Oct 2026.</text>
+<text x="722" y="46" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" fill="#59636e" letter-spacing="2.2">RECENTLY SHIPPED</text>
+<circle cx="728" cy="85" r="4" fill="#e8821a"/>
+<text x="742" y="90" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#1f2328">AlertEye</text>
+<text x="742" y="108" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#59636e">pushed 1d ago</text>
+<circle cx="728" cy="129" r="4" fill="#e8821a"/>
+<text x="742" y="134" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#1f2328">patient-registration-vo…</text>
+<text x="742" y="152" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#59636e">pushed 8d ago</text>
+<circle cx="728" cy="173" r="4" fill="#e8821a"/>
+<text x="742" y="178" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#1f2328">SmartLoad</text>
+<text x="742" y="196" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#59636e">pushed 5w ago</text>
+<circle cx="728" cy="217" r="4" fill="#e8821a"/>
+<text x="742" y="222" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#1f2328">qf-attack-robustness-an…</text>
+<text x="742" y="240" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#59636e">pushed 7w ago</text>
+</svg>
