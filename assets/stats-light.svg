@@ -5,7 +5,7 @@
 <text x="6" y="46" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" fill="#59636e" letter-spacing="2.2">THE NUMBERS</text>
 <text x="6" y="98" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" fill="#1f2328">13</text>
 <text x="6" y="118" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e">public repositories</text>
-<text x="6" y="160" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" fill="#1f2328">61</text>
+<text x="6" y="160" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" fill="#1f2328">63</text>
 <text x="6" y="180" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e">contributions, last 12 months</text>
 <text x="6" y="222" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" fill="#1f2328">5</text>
 <text x="6" y="242" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e">followers</text>
@@ -36,7 +36,7 @@
 <circle cx="510" cy="198" r="5" fill="#8a8a8a"/>
 <text x="523" y="202" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1f2328">C</text>
 <text x="650" y="202" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#59636e" text-anchor="end">4%</text>
-<text x="340" y="246" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#818b98">Excludes notebooks. Public, non-fork repos. Updated 02 Oct 2026.</text>
+<text x="340" y="246" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#818b98">Excludes notebooks. Public, non-fork repos. Updated 03 Oct 2026.</text>
 <text x="722" y="46" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" fill="#59636e" letter-spacing="2.2">RECENTLY SHIPPED</text>
 <circle cx="728" cy="85" r="4" fill="#e8821a"/>
 <text x="742" y="90" font-family="'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#1f2328">AlertEye</text>
